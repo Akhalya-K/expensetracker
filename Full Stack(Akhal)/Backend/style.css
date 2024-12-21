@@ -1,0 +1,201 @@
+/* Variables */
+body {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Ftechnology-background&psig=AOvVaw28MnrBJZrh2AYsu0F0Ygdy&ust=1734795559494000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj1k5vXtooDFQAAAAAdAAAAABAE');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+:root {
+    --black-50: #2e384d;
+    --green: #0cb95a;
+    --red: #ef3434;
+    --white: #fff;
+    --gray: #f0f0f9;
+    --medium: 500;
+    --bold: 700;
+  }
+  
+  /* Global Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Container Styles */
+  .container {
+    background-color: var(--white);
+    width: 75rem;
+    padding: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  /* Title Styles */
+  .expense-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    color: var(--black-50);
+    margin-bottom: 2rem;
+  }
+  
+  /* Balance Section */
+  .balance {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #balance {
+    font-size: 3rem;
+    font-weight: var(--bold);
+    color: var(--black-50);
+  }
+  
+  .balance h4 {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    color: var(--black-50);
+  }
+  
+  /* Income and Expense Section */
+  .inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  
+  .income, .expense {
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+  }
+  
+  .income h2, .expense h2 {
+    font-size: 2rem;
+    font-weight: var(--bold);
+  }
+  
+  .income h2 {
+    color: var(--green);
+  }
+  
+  .expense h2 {
+    color: var(--red);
+  }
+  
+  .income h4, .expense h4 {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    color: var(--black-50);
+  }
+  
+  /* History Section */
+  .history {
+    margin-bottom: 3rem;
+  }
+  
+  .title-history {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    color: var(--black-50);
+    margin-bottom: 1rem;
+  }
+  
+  .history-box {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .history-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray);
+  }
+  
+  .history-box li.plus {
+    border-left: 5px solid var(--green);
+  }
+  
+  .history-box li.minus {
+    border-left: 5px solid var(--red);
+  }
+  
+  .history-box li h4 {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+  }
+  
+  .history-box li span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    color: var(--black-50);
+  }
+  
+  .history-box li i {
+    cursor: pointer;
+    color: var(--red);
+  }
+  
+  /* Transaction Section */
+  .transaction {
+    text-align: center;
+  }
+  
+  .transaction-title {
+    font-size: 2rem;
+    font-weight: var(--bold);
+    color: var(--black-50);
+    margin-bottom: 2rem;
+  }
+  
+  .for-text, .for-amount {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--black-50);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #098c48;
+  }
+  
